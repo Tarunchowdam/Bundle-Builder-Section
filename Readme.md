@@ -1,105 +1,117 @@
-# Bundle Builder (Static UI)
+# Bundle Builder UI
 
-This is a static **"Bundle Builder" UI** built using **HTML, CSS, and JavaScript**, inspired by Shopify's custom bundle section. It allows users to select products, view bundle progress, see discount calculations, and proceed with the selection — all simulated on the frontend.
+This project is a **static "Bundle Builder" interface** inspired by Shopify's custom bundle section. Built using **HTML, CSS, and JavaScript**, it allows users to select products, track progress, see dynamic pricing, and more.
 
----
+##  Live Demo
 
-## 📸 Preview
-
-> A responsive product bundle builder with dynamic sidebar and discount logic — fully mobile-friendly!
+🔗 [View on Netlify](https://bundle-builder-section-tarun.netlify.app/)
 
 ---
 
-## 📁 Folder Structure
-bundle-builder/
+## Folder Structure
+
+
+
 ├── index.html # Main HTML file
-
 
 ├── style.css # All styling using custom CSS
 
-
 ├── script.js # JavaScript for interactive behavior
-
 
 └── assets/ # Product images & icons
 
-
 ├── product-1.jpg
-
 
 ├── product-2.jpg
 
+├── product-3.jpg
 
-├── ...
+├── product-4.jpg
 
----
+├── product-5.jpg
 
-##  How to Run This Project
-
-1. **Download the Project**
-   - Clone the repo or [download the ZIP](#) and extract it.
-
-2. **Open the Project**
-   - Open the folder in your preferred code editor (VS Code, Sublime, etc.).
-
-3. **View in Browser**
-   - Simply open `index.html` in any web browser (Chrome, Firefox, etc.).
+├── product-6.jpg
 
 ---
 
-##  Features
+##  Features Implemented
 
-### Product Grid
-- 6 product cards with:
-  - Image, title, and price.
-  - Toggle-style **“Add to Bundle”** buttons.
-
-### Bundle Sidebar
-- Progress bar indicating how many products selected (e.g. 2/3 added).
-- List of selected products with thumbnail, title, and price.
-- **30% Discount** applied automatically when 3 or more products selected.
-- Final **Subtotal** with discount shown.
-- **"Add Bundle to Cart"** button:
-  - Only enabled when 3+ products are selected.
-  - Logs selected bundle to console on click.
-
-### Mobile-Friendly
-- Product grid stacks vertically.
-- Sidebar becomes sticky or stacks below on smaller screens.
+- ✅ **Responsive product grid** (6 cards)
+- ✅ Toggle-style “Add to Bundle” buttons
+- ✅ **Dynamic sidebar** with:
+  - Progress bar (e.g., 2/3 items selected)
+  - Thumbnails, names, prices of selected products
+  - Subtotal with **30% discount** after selecting 3+ products
+- ✅ **"Add Bundle to Cart"** button enabled at 3+ selections
+- ✅ Mobile-friendly layout:
+  - Product grid stacks vertically
+  - Sidebar adapts below or sticky
 
 ---
 
-##  Simulated Logic (No Backend)
-- Interactions are handled via **vanilla JavaScript** (no jQuery, no frameworks).
-- Cart or checkout are not implemented — just console logs.
+##  How to Run Locally
+
+1. Clone the repository or download the zip:
+    ```bash
+    git clone https://github.com/your-username/bundle-builder.git
+    ```
+
+2. Navigate to the folder:
+    ```bash
+    cd bundle-builder
+    ```
+
+3. Open `index.html` in your browser.
 
 ---
 
-## Optional Stretch Features (Not Included Yet)
-You can extend this project by:
-- Adding quantity steppers per product.
-- Animating the “Added ✓” button.
-- Allowing removal of items from the sidebar.
-- Showing a full cart modal view.
+##  Deploying on Netlify
+
+Want to host it like this? 👉 [https://bundle-builder-section-tarun.netlify.app](https://bundle-builder-section-tarun.netlify.app)
+
+### Step-by-Step Guide:
+
+1. **Go to** [https://app.netlify.com/](https://app.netlify.com/)
+2. Sign in with GitHub or Email
+3. Click `Add New Site` → `Import from Git`
+4. Select your GitHub repo with the project
+5. Set build command to _empty_ (since this is a static site)
+6. Set publish directory as `/bundle-builder/`
+7. Click **Deploy Site**
+
+✅ Once deployed, Netlify will give you a live link. You can also change the name under **Site Settings → Domain Management**.
 
 ---
 
-## Code Style & Guidelines
-- Clean, semantic HTML5
-- Fully commented JavaScript and CSS
-- Responsive design using Flexbox and Media Queries
+##  Tech Stack
+
+- HTML5 (Semantic structure)
+- CSS3 (Custom styling, responsiveness)
+- JavaScript (Pure vanilla JS, no frameworks)
 
 ---
 
-## Credits
+##  Notes
 
-- Icons and images are placeholders.
-- Design inspired by Shopify's Bundle Builder UX.
+- No frameworks (like React/Vue)
+- No external JS libraries (e.g., jQuery)
+- Pure front-end simulation — no cart or checkout logic
+- Designed to match layout, spacing, and interactivity closely with provided Figma mockup
 
 ---
 
-## 📝 License
+##  Optional Stretch Goals (To Try)
 
-This is a assignment project. No license is enforced.
+- Quantity stepper for each product
+- Animated toggle buttons
+- Deselect/remove items directly from sidebar
+- Simulated cart view on CTA click
+
+---
+
+## 👤 Author
+
+**Tarunchowdam (bundle-builder-section-tarun.netlify.app)**  
+Feel free to reach out if you'd like to collaborate or connect!
 
 
