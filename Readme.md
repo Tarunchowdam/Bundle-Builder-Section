@@ -1,10 +1,3 @@
-Here’s a complete and professional `README.md` file for your **Bundle Builder** project — with step-by-step setup, usage instructions, and feature documentation:
-
----
-
-### 📦 `README.md` — Bundle Builder
-
-```md
 # 🧺 Bundle Builder (Static UI)
 
 This is a static **"Bundle Builder" UI** built using **HTML, CSS, and JavaScript**, inspired by Shopify's custom bundle section. It allows users to select products, view bundle progress, see discount calculations, and proceed with the selection — all simulated on the frontend.
@@ -18,19 +11,14 @@ This is a static **"Bundle Builder" UI** built using **HTML, CSS, and JavaScript
 ---
 
 ## 📁 Folder Structure
-
-```
-
 bundle-builder/
-├── index.html         # Main HTML file
-├── style.css          # All styling using custom CSS
-├── script.js          # JavaScript for interactive behavior
-└── assets/            # Product images & icons
+├── index.html # Main HTML file
+├── style.css # All styling using custom CSS
+├── script.js # JavaScript for interactive behavior
+└── assets/ # Product images & icons
 ├── product-1.jpg
 ├── product-2.jpg
 ├── ...
-
-```
 
 ---
 
@@ -100,9 +88,6 @@ You can extend this project by:
 
 ## 📝 License
 
-This is a personal practice project. No license is enforced.
-```
+This is a assignment project. No license is enforced.
 
----
 
-Would you like me to include this `README.md` directly in your project zip and re-upload it for you?
