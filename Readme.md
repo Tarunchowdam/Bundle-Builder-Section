@@ -1,4 +1,4 @@
-# 🧺 Bundle Builder (Static UI)
+# Bundle Builder (Static UI)
 
 This is a static **"Bundle Builder" UI** built using **HTML, CSS, and JavaScript**, inspired by Shopify's custom bundle section. It allows users to select products, view bundle progress, see discount calculations, and proceed with the selection — all simulated on the frontend.
 
@@ -13,16 +13,28 @@ This is a static **"Bundle Builder" UI** built using **HTML, CSS, and JavaScript
 ## 📁 Folder Structure
 bundle-builder/
 ├── index.html # Main HTML file
+
+
 ├── style.css # All styling using custom CSS
+
+
 ├── script.js # JavaScript for interactive behavior
+
+
 └── assets/ # Product images & icons
+
+
 ├── product-1.jpg
+
+
 ├── product-2.jpg
+
+
 ├── ...
 
 ---
 
-## 🚀 How to Run This Project
+##  How to Run This Project
 
 1. **Download the Project**
    - Clone the repo or [download the ZIP](#) and extract it.
@@ -35,14 +47,14 @@ bundle-builder/
 
 ---
 
-## 🔑 Features
+##  Features
 
-### 🧃 Product Grid
+### Product Grid
 - 6 product cards with:
   - Image, title, and price.
   - Toggle-style **“Add to Bundle”** buttons.
 
-### 📊 Bundle Sidebar
+### Bundle Sidebar
 - Progress bar indicating how many products selected (e.g. 2/3 added).
 - List of selected products with thumbnail, title, and price.
 - **30% Discount** applied automatically when 3 or more products selected.
@@ -51,19 +63,19 @@ bundle-builder/
   - Only enabled when 3+ products are selected.
   - Logs selected bundle to console on click.
 
-### 📱 Mobile-Friendly
+### Mobile-Friendly
 - Product grid stacks vertically.
 - Sidebar becomes sticky or stacks below on smaller screens.
 
 ---
 
-## ⚙️ Simulated Logic (No Backend)
+##  Simulated Logic (No Backend)
 - Interactions are handled via **vanilla JavaScript** (no jQuery, no frameworks).
 - Cart or checkout are not implemented — just console logs.
 
 ---
 
-## 💡 Optional Stretch Features (Not Included Yet)
+## Optional Stretch Features (Not Included Yet)
 You can extend this project by:
 - Adding quantity steppers per product.
 - Animating the “Added ✓” button.
@@ -72,14 +84,14 @@ You can extend this project by:
 
 ---
 
-## 🧼 Code Style & Guidelines
+## Code Style & Guidelines
 - Clean, semantic HTML5
 - Fully commented JavaScript and CSS
 - Responsive design using Flexbox and Media Queries
 
 ---
 
-## ✨ Credits
+## Credits
 
 - Icons and images are placeholders.
 - Design inspired by Shopify's Bundle Builder UX.
