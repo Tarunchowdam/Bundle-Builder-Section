@@ -1,0 +1,391 @@
+/* ====== Base Reset and Typography ====== */
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  color: #111;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* ====== Container Layout ====== */
+.bundle-builder-container {
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  gap: 48px;
+  padding: 0 40px 40px 40px;
+  align-items: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.main-title {
+  width: 100%;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #111;
+  margin-top: 48px;
+  margin-bottom: 0px;
+  letter-spacing: -1px;
+  background: #fff;
+}
+
+/* ====== Product Grid ====== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  flex: 2;
+}
+
+/* ====== Product Card ====== */
+.product-card {
+  background: #fff;
+  border: 0px solid #d9d9d9;
+  padding: 0 0 0px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border-radius: 0;
+  display: block;
+}
+
+.product-card h3 {
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.product-card .price {
+  color: #888;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+/* ====== Add to Bundle Button ====== */
+ .add-to-bundle-btn {
+  background: #ededed;
+  color: #222;
+  border: 2px solid #222;
+  border-radius: 0;
+  padding: 18px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.18rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  letter-spacing: -0.5px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  font-family: 'Inter', Arial, sans-serif;
+}
+
+.add-to-bundle-btn .icon {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.add-to-bundle-btn.selected {
+  background: #3e3d3d;
+  color: #fff;
+  border: 2px solid #222;
+}
+
+.add-to-bundle-btn.selected .icon {
+  font-size: 2rem;
+  font-weight: 700;
+  content: "✓";
+}
+
+/* ====== Sidebar ====== */
+.bundle-sidebar {
+  background: #fff;
+  border: 3px solid #222;
+  padding: 32px 24px;
+  width: 370px;
+  min-width: 260px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #111;
+}
+
+.bundle-sidebar h2 {
+  font-size: 1.22rem;
+  font-weight: 700;
+}
+
+.sidebar-desc {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 18px;
+}
+
+/* ====== Progress Bar ====== */
+.progress {
+  margin-bottom: 16px;
+}
+
+#progress-count {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.progress-bar-bg {
+  background: #ededed;
+  border-radius: 8px;
+  height: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  background: #1c201e;
+  height: 100%;
+  width: 0%;
+  border-radius: 8px;
+  transition: width 0.3s ease-in-out;
+}
+
+/* ====== Selected Products List ====== */
+#selected-products-list {
+  min-height: 3 * 100px; /* 3 rows of 100px each, adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* Sidebar product row */
+.selected-product-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  position: relative;
+  min-height: 100px;
+}
+
+/* Product image */
+.selected-product-row img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: none;
+  flex-shrink: 0;
+}
+
+/* Info and price */
+.selected-product-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  color: #111;
+  justify-content: center;   /* Vertically center the text */
+  align-items: flex-start; 
+}
+
+.selected-product-title {
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.selected-product-price {
+  font-size: 1.05rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+
+/* Quantity box */
+.selected-product-controls {
+  display: flex;
+  align-items: center;
+  background: #f7f7f7;
+  border-radius: 2px;
+  padding: 0 0;
+  min-width: 140px;
+  justify-content: center;
+  margin-top: 4px;
+  margin-bottom: 0;
+  height: 48px;
+  font-size: 1.2rem;
+  gap: 0;
+}
+
+/* Placeholder for empty slots */
+.sidebar-placeholder {
+  min-height: 100px;
+  background: #f7f7f7;
+  border-radius: 6px;
+  margin-bottom: 18px;
+}
+.qty-btn {
+  background: transparent;
+  border: none;
+  color: #222;
+  font-size: 1.5rem;
+  width: 48px;
+  height: 48px;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: 400;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-btn:active {
+  background: #ededed;
+}
+
+.selected-product-qty {
+  font-size: 1.2rem;
+  width: 32px;
+  text-align: center;
+  color: #222;
+  display: inline-block;
+}
+
+/* Trash icon button */
+.remove-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 12px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.remove-btn svg {
+  width: 22px;
+  height: 22px;
+  color: #888;
+  transition: color 0.2s, stroke 0.2s, fill 0.2s;
+}
+
+.remove-btn:hover svg path,
+.remove-btn:hover svg rect {
+  stroke: #e74c3c !important;
+  fill: #e74c3c !important;
+}
+
+/* ====== Summary Section ====== */
+.summary {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.discount-row,
+.subtotal-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount-row {
+  color: #222;
+  font-size: 1rem;
+}
+
+.subtotal-row {
+  color: #111;
+  font-size: 1.18rem;
+  font-weight: 700;
+}
+
+#discount {
+  font-weight: 500;
+}
+
+#subtotal {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* ====== Bundle Button ====== */
+#bundle-btn {
+  background: #312f2f;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 18px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  letter-spacing: 0.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+#bundle-btn:disabled {
+  background: #ededed;
+  color: #888;
+  cursor: not-allowed;
+  border: 1px solid #ddd;
+}
+
+#bundle-btn .icon {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 1100px) {
+  .bundle-builder-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .bundle-sidebar {
+    width: 100%;
+    margin-top: 24px;
+  }
+  .product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-title {
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+  .bundle-sidebar {
+    padding: 16px 8px;
+  }
+}

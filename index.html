@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bundle Builder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bundle-builder-container">
+    <h1 class="main-title">Buy 3 and Save 30%</h1>
+    <main class="product-grid">
+      <div class="product-card" data-product-id="1" data-title="Tie-Dye Lounge Set" data-price="150" data-img="assets/product1.jpg">
+        <img src="assets/product1.jpg" alt="Tie-Dye Lounge Set" />
+        <h3>Tie-Dye Lounge Set</h3>
+        <p class="price">$150.00</p>
+        <button class="add-to-bundle-btn"><span>Add to Bundle</span><span class="icon">+</span></button>
+      </div>
+      <div class="product-card" data-product-id="2" data-title="Sunburst Tracksuit" data-price="150" data-img="assets/product2.jpg">
+        <img src="assets/product2.jpg" alt="Sunburst Tracksuit" />
+        <h3>Sunburst Tracksuit</h3>
+        <p class="price">$150.00</p>
+        <button class="add-to-bundle-btn"><span>Add to Bundle</span><span class="icon">+</span></button>
+      </div>
+      <div class="product-card" data-product-id="3" data-title="Retro Red Streetwear" data-price="150" data-img="assets/product3.jpg">
+        <img src="assets/product3.jpg" alt="Retro Red Streetwear" />
+        <h3>Retro Red Streetwear</h3>
+        <p class="price">$150.00</p>
+        <button class="add-to-bundle-btn"><span>Add to Bundle</span><span class="icon">+</span></button>
+      </div>
+      <div class="product-card" data-product-id="4" data-title="Urban Sportwear Combo" data-price="150" data-img="assets/product4.jpg">
+        <img src="assets/product4.jpg" alt="Urban Sportwear Combo" />
+        <h3>Urban Sportwear Combo</h3>
+        <p class="price">$150.00</p>
+        <button class="add-to-bundle-btn"><span>Add to Bundle</span><span class="icon">+</span></button>
+      </div>
+      <div class="product-card" data-product-id="5" data-title="Oversized Knit & Coat" data-price="150" data-img="assets/product5.jpg">
+        <img src="assets/product5.jpg" alt="Oversized Knit & Coat" />
+        <h3>Oversized Knit & Coat</h3>
+        <p class="price">$150.00</p>
+        <button class="add-to-bundle-btn"><span>Add to Bundle</span><span class="icon">+</span></button>
+      </div>
+      <div class="product-card" data-product-id="6" data-title="Chic Monochrome Blazer" data-price="150" data-img="assets/product6.jpg">
+        <img src="assets/product6.jpg" alt="Chic Monochrome Blazer" />
+        <h3>Chic Monochrome Blazer</h3>
+        <p class="price">$150.00</p>
+        <button class="add-to-bundle-btn"><span>Add to Bundle</span><span class="icon">+</span></button>
+      </div>
+    </main>
+        
+    <aside class="bundle-sidebar">
+      <h1><b>Create a Bundle</b></h1>
+        <p class="sidebar-desc">Add at <b>least 3</b> products and <b>Save <span style="color:#171b1a;">30%</span></b>.</p>
+        <div class="progress">
+        <span id="progress-count"></span>
+        <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progress-bar"></div>
+      </div>
+  </div>
+  <div id="selected-products-list"></div>
+  <div class="summary">
+    <p class="discount-row">Discount: <span id="discount">-$0.00 (30%)</span></p>
+    <p class="subtotal-row">Subtotal: <span id="subtotal">$0.00</span></p>
+  </div>
+  <button id="bundle-btn" disabled><span>Add 3 Items to Proceed</span><span class="icon"></span></button>
+</aside>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
