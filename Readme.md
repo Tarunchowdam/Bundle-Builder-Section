@@ -26,14 +26,14 @@ This project is a **static "Bundle Builder" interface** inspired by Shopify's cu
 
 ##  Features Implemented
 
-- ✅ **Responsive product grid** (6 cards)
-- ✅ Toggle-style “Add to Bundle” buttons
-- ✅ **Dynamic sidebar** with:
+- **Responsive product grid** (6 cards)
+- Toggle-style “Add to Bundle” buttons
+- **Dynamic sidebar** with:
   - Progress bar (e.g., 2/3 items selected)
   - Thumbnails, names, prices of selected products
   - Subtotal with **30% discount** after selecting 3+ products
-- ✅ **"Add Bundle to Cart"** button enabled at 3+ selections
-- ✅ Mobile-friendly layout:
+- **"Add Bundle to Cart"** button enabled at 3+ selections
+- Mobile-friendly layout:
   - Product grid stacks vertically
   - Sidebar adapts below or sticky
 
@@ -99,9 +99,9 @@ Want to host it like this? 👉 [https://bundle-builder-section-tarun.netlify.ap
 
 ---
 
-## 👤 Author
+## Author
 
-**Tarunchowdam (bundle-builder-section-tarun.netlify.app)**  
+**[Tarunchowdam](bundle-builder-section-tarun.netlify.app)**  
 Feel free to reach out if you'd like to collaborate or connect!
 
 
