@@ -36,6 +36,10 @@ This project is a **static "Bundle Builder" interface** inspired by Shopify's cu
 - Mobile-friendly layout:
   - Product grid stacks vertically
   - Sidebar adapts below or sticky
+- Quantity stepper for each product
+- Animated toggle buttons
+- Deselect/remove items directly from sidebar
+- Simulated cart view on CTA click
 
 ---
 
@@ -69,7 +73,7 @@ Want to host it like this? 👉 [https://bundle-builder-section-tarun.netlify.ap
 6. Set publish directory as `/bundle-builder/`
 7. Click **Deploy Site**
 
-✅ Once deployed, Netlify will give you a live link. You can also change the name under **Site Settings → Domain Management**.
+Once deployed, Netlify will give you a live link. You can also change the name under **Site Settings → Domain Management**.
 
 ---
 
@@ -89,13 +93,6 @@ Want to host it like this? 👉 [https://bundle-builder-section-tarun.netlify.ap
 - Designed to match layout, spacing, and interactivity closely with provided Figma mockup
 
 ---
-
-##  Optional Stretch Goals (To Try)
-
-- Quantity stepper for each product
-- Animated toggle buttons
-- Deselect/remove items directly from sidebar
-- Simulated cart view on CTA click
 
 ---
 
