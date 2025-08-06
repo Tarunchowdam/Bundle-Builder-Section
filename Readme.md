@@ -8,7 +8,9 @@ This project is a **static "Bundle Builder" interface** inspired by Shopify's cu
 
 ---
 
-## Folder Structure
+## 📁 Project Structure
+
+```text
 ├── index.html             # Main HTML file
 ├── style.css              # All styling using custom CSS
 ├── script.js              # JavaScript for interactive behavior
@@ -19,7 +21,7 @@ This project is a **static "Bundle Builder" interface** inspired by Shopify's cu
     ├── product4.jpg
     ├── product5.jpg
     └── product6.jpg
-
+```
 ---
 
 ##  Features Implemented
